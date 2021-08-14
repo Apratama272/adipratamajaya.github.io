@@ -1,3 +1,10 @@
+.Promo_ {
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .social_tahap {
   border: none;
   gap: 10px;
