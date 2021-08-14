@@ -2,7 +2,7 @@
 Website dibangun dengan :
 html, css, dan javascript!
 
-<img src="image/example.png" width="50%">
+<img src="image/example.png" width="25%">
 <br>
 
 # Media Query
