@@ -5,20 +5,16 @@
   flex-direction: column;
 }
 
+.tahap_ {
+  text-align: center;
+}
+
 .social_tahap {
   border: none;
   gap: 10px;
   box-shadow: 0 0 0;
   width: 39px;
   display: flex;
-}
-
-.tahap_ {
-  padding: 25px;
-  background-color: coral;
-  position: fixed;
-  bottom: 271px;
-  font-size: 20px;
 }
 
 header {
