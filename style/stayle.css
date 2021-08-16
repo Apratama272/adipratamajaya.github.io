@@ -1,3 +1,11 @@
+.notice__ {
+  position: fixed;
+  font-size: 16px;
+  bottom: 219px;
+  background-color: pink;
+  padding: 10px;
+}
+
 .notice_ button {
   background-color: aquamarine;
   padding: 10px;
