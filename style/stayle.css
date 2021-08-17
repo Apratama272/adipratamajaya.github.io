@@ -20,6 +20,8 @@
 
 .Promo_ .picreal_ {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Promo_ {
