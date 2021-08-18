@@ -1,4 +1,17 @@
-.notice__ {
+.buttonUp_ {
+  display: flex;
+  position: fixed;
+}
+
+.buttonUp_ img {
+  position: fixed;
+  display: flex;
+  width: 70px;
+  bottom: 310px;
+  right: 24px;
+}
+
+/* .notice__ {
   position: fixed;
   font-size: 16px;
   bottom: 219px;
@@ -11,7 +24,7 @@
   padding: 10px;
   margin-top: 10px;
   border: none;
-}
+} */
 
 .notice_ a {
   text-decoration: none;
