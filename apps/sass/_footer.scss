@@ -1,0 +1,17 @@
+footer {
+    padding: 16px 0;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sosial {
+        img {
+            width: 30px;
+        }
+    }
+}
