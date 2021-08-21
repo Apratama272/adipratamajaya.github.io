@@ -1,17 +1,21 @@
 footer {
     padding: 16px 0;
-    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: tomato;
     display: flex;
+    position: sticky;
+    bottom: 0;
     justify-content: space-around;
 
     a {
+        align-self: center;
         text-decoration: none;
         color: white;
     }
 
     .sosial {
         img {
-            width: 30px;
+            width: 45px;
         }
     }
 }
