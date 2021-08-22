@@ -1,3 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eee;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 5s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 5s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
 header {
   padding: 0;
   margin: 0;
@@ -11,7 +100,7 @@ header p {
 nav {
   z-index: 1;
   -webkit-box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.3);
   padding: 10px 0;
   background-color: darkcyan;
   display: -webkit-box;
@@ -22,7 +111,7 @@ nav {
   position: sticky;
   font-family: Arial, Helvetica, sans-serif;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 nav a img {
@@ -31,8 +120,8 @@ nav a img {
 
 nav ul {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   list-style: none;
 }
 
@@ -58,13 +147,13 @@ footer {
   position: sticky;
   bottom: 0;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 footer a {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   text-decoration: none;
   color: white;
 }
@@ -121,13 +210,13 @@ footer .sosial img {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   cursor: pointer;
   width: 30px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   height: 25px;
 }
 
@@ -181,6 +270,7 @@ footer .sosial img {
   50% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(45deg);
   }
@@ -189,11 +279,12 @@ footer .sosial img {
 @keyframes inM {
   50% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 }
 
@@ -201,6 +292,7 @@ footer .sosial img {
   50% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(45deg);
   }
@@ -209,11 +301,12 @@ footer .sosial img {
 @keyframes outM {
   50% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 }
 
@@ -221,9 +314,11 @@ footer .sosial img {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(9px) rotate(135deg);
   }
@@ -232,15 +327,17 @@ footer .sosial img {
 @keyframes inT {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(9px) rotate(0deg);
-            transform: translateY(9px) rotate(0deg);
+    transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(9px) rotate(135deg);
-            transform: translateY(9px) rotate(135deg);
+    transform: translateY(9px) rotate(135deg);
   }
 }
 
@@ -248,9 +345,11 @@ footer .sosial img {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(9px) rotate(135deg);
   }
@@ -259,15 +358,17 @@ footer .sosial img {
 @keyframes outT {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(9px) rotate(0deg);
-            transform: translateY(9px) rotate(0deg);
+    transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(9px) rotate(135deg);
-            transform: translateY(9px) rotate(135deg);
+    transform: translateY(9px) rotate(135deg);
   }
 }
 
@@ -275,9 +376,11 @@ footer .sosial img {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(-9px) rotate(135deg);
   }
@@ -286,15 +389,17 @@ footer .sosial img {
 @keyframes inBtm {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(-9px) rotate(0deg);
-            transform: translateY(-9px) rotate(0deg);
+    transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(-9px) rotate(135deg);
-            transform: translateY(-9px) rotate(135deg);
+    transform: translateY(-9px) rotate(135deg);
   }
 }
 
@@ -302,9 +407,11 @@ footer .sosial img {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(-9px) rotate(135deg);
   }
@@ -313,15 +420,17 @@ footer .sosial img {
 @keyframes outBtm {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(-9px) rotate(0deg);
-            transform: translateY(-9px) rotate(0deg);
+    transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(-9px) rotate(135deg);
-            transform: translateY(-9px) rotate(135deg);
+    transform: translateY(-9px) rotate(135deg);
   }
 }
 
@@ -438,8 +547,8 @@ footer .sosial img {
   padding: 10px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 15px;
   border: 1px solid darkcyan;
   font-family: Arial, Helvetica, sans-serif;
@@ -455,8 +564,8 @@ footer .sosial img {
   color: white;
   gap: 15px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 ._user h1 {
@@ -467,4 +576,5 @@ footer .sosial img {
   padding: 0;
   margin: 0;
 }
+
 /*# sourceMappingURL=stayle.css.map */
