@@ -7,8 +7,6 @@ atau klik link pengajuan report!
 Website dibangun dengan :
 html, css, dan javascript!
 
-<img src="image/example.png" width="25%">
-<br>
 
 # Media Query
 Website Belum di buatkan versi Desktop
