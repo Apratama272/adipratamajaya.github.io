@@ -67,6 +67,17 @@ footer .sosial img {
   width: 45px;
 }
 
+._notice {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 0;
+}
+
+._notice p {
+  margin: 0 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
 .how_ {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 20px;
