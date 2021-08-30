@@ -1,8 +1,8 @@
-# Mohon Maaf Website Tutup sementara
-jika ada pesanan atau orderan yang belum selesai bisa telepon <b>089613048077</b> tidak menerima whatsapp!
+# Website Buka Kembali
+terimakasih juntuk 151+ orang yang sudah percaya dengan jasa print out sertifikat vaksin.
 
-atau klik link pengajuan report!
-
+jika ada komplain bisa hubungi
+<b> 089 - 613048077 </b>
 # Simple Website
 Website dibangun dengan :
 html, css, dan javascript!
