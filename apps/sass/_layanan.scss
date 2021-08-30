@@ -1,0 +1,116 @@
+.layanan_ {
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+    .ser_ {
+        align-self: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    // ! Crad Box
+    .card {
+        display: flex;
+        border: 1px solid #9E7777;
+        width: 280px;
+        position: relative;
+        height: 236px;
+        
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    .card_ {
+        padding: 10px 0;
+        text-align: center;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        background-color: #9E7777;
+    }
+
+    h1 {
+        align-self: center;
+        margin-bottom: 15px;
+        text-align: center;
+        border-bottom: 3px solid #EDCD5C;
+        width: 150px;
+    }
+
+    // Lingkaran
+    .circele {
+        width: 100px;
+        position: absolute;
+        height: 100px;
+        background-color: #EDCD5C;
+        border-radius: 50px;
+        // position
+        z-index: -10;
+        right: 131px;
+        top: 132px;
+    }
+    .circele_ {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #DE4902;
+        border-radius: 50px;
+
+        // position
+        z-index: -10;
+        left: 97px;
+        bottom: -45px;
+    }
+    .circele__ {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #228896;
+        border-radius: 50px;
+
+        // position
+        z-index: -10;
+        top: 38px;
+        left: 400px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .layanan_ {
+        align-items: center;
+
+        .ser_ {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        h1 {
+            margin: 15px 0;
+        }
+
+        // ! tambahan gambar
+
+        .circele {
+          display: none;
+        }
+        .circele_ {
+            top: 35px;
+            left: 10px;
+            
+        }
+        .circele__ {
+            display: none;
+        }
+    }
+    
+}
