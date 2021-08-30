@@ -1,0 +1,96 @@
+.dig {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 20px 0;
+    background-color: #9E7777;
+
+    h1 {
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+    }
+
+    .card_dig {
+        width: 84%;
+        display: flex;
+        height: 369px;
+        margin-bottom: 20px;
+
+        .txt__ {
+            align-self: center;
+            margin-bottom: 20px;
+            margin: 0 20px;
+            padding: 22px 20px;
+            box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+            background-color: #F5E8C7;
+            font-size: 20px;
+            color: #6F4C5B;
+
+            .txt_btn {
+                gap: 10px;
+                cursor: pointer;
+                margin-top: 15px;
+                border-radius: 50px;
+                padding: 10px 0;
+                justify-content: center;
+                display: flex;
+                background-color: #6F4C5B;
+
+               a {
+                   text-decoration: none;
+                   color: white;
+                   align-self: center;
+               }
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+
+
+        .card__ {
+            position: relative;
+
+            .card_txt {
+                position: absolute;
+                background-color: #F5E8C7;
+                width: 100%;
+                color: #6F4C5B;
+                padding: 29px 0;
+                bottom: 14px;
+                text-align: center;
+            } 
+
+            img {
+                width: 34rem;
+                box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+                height: 100%;
+                object-fit: cover;
+            }
+        } 
+    } 
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .dig {
+        
+        .card_dig {
+           flex-direction: column;
+
+           .card__ {
+
+            img {
+                width: 100%;
+            }
+           }
+        }
+    }
+    
+}
