@@ -198,6 +198,14 @@
   }
 }
 
+header {
+  display: block;
+  z-index: 10;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 nav {
   padding: 15px 0;
   background-color: #6F4C5B;
@@ -355,6 +363,7 @@ main aside .card img {
 
 footer {
   background-color: white;
+  z-index: 99;
   color: black;
   text-align: center;
   position: -webkit-sticky;
