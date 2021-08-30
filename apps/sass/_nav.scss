@@ -1,3 +1,5 @@
+// font-family: AngryBirds;
+
 header {
     display: block;
     z-index: 10;
@@ -16,6 +18,8 @@ nav {
         display: none;
     }
     a {
+        font-family: AngryBirds;
+        font-size: 25px;
         align-self: center;
         text-decoration: none;
         color: #F5E8C7;
