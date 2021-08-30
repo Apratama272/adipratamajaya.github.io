@@ -225,6 +225,8 @@ nav .Hamburger_menu {
 }
 
 nav a {
+  font-family: AngryBirds;
+  font-size: 25px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -307,6 +309,7 @@ nav a img {
 }
 
 .content_utama .content_txt h1 {
+  font-family: AngryBirds;
   margin-top: -50px;
   margin-bottom: 25px;
   font-size: 180px;
