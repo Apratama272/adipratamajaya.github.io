@@ -1,0 +1,87 @@
+body {
+    position: relative;
+}
+
+#container_main {
+    background-image: url(../image/pelanggan/main.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+
+    .main_txt {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+
+    h1 {
+        font-family: Berlin;
+        color: #f3f3f3;
+        font-size: 150px;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+
+    }
+
+    p {
+        margin: 0 150px;
+        color: white;
+        font-family: Roboto;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+        text-align: center;
+        font-style: italic;
+    }
+
+    button {
+        border: none;
+        width: 254px;
+        margin-top: 18px;
+        font-size: 35px;
+        align-self: center;
+        cursor: pointer;
+        font-family: Organte_ultraBold;
+        height: 67px;
+        border-radius: 5px;
+        background-color: #D94A01;
+
+
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+
+            &:hover {
+                color: yellow;
+                box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 700px) {
+    #container_main {
+        .main_txt {
+
+            h1 {
+                font-size: 20vw;
+            }
+
+            p {
+                margin: 0 50px;
+            }
+        }
+    }
+}

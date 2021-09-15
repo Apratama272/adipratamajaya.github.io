@@ -1,0 +1,57 @@
+.services_ {
+    background-color: #FBBB27;
+    display: flex;
+    height: 1000px;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-family: Organte_ultraBold;
+        color: #f3f3f3;
+        font-size: 48px;
+    }
+
+    .main_oreder {
+        position: relative;
+        display: flex;
+        border-radius: 10px;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        background-color: #FFFFFF;
+        width: 90vw;
+        height: 30rem;
+
+        // Box
+        .box {
+            position: relative;
+            border-radius: 10px;
+            height: 90%;
+            width: 375px;
+            background-color: #ff0000b5;
+
+            // Tombol
+            .btn_box {
+                display: flex;
+                height: 50px;
+                border: none;
+                background-color: #FBBB27;
+                flex-direction: row;
+                position: absolute;
+                bottom: 0;
+
+                .value {
+                    background-color: #FBBB27;
+                    height: 100%;
+                    text-align: center;
+                    color: #f3f3f3;
+                }
+            }
+        }
+    }
+
+
+}

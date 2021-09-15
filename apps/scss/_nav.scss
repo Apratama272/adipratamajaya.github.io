@@ -1,15 +1,8 @@
-@font-face {
-    font-family: 'Organetto-Bold';
-    src: url(../font/Organetto-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Berlin';
-    src: url(../font/BRLNSR.TTF);
-}
-
 .nav_ {
+    box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.3);
     padding: 15px 0;
+    position: sticky;
+    top: 0;
     background-color: #D94A01;
     display: flex;
     justify-content: space-around;
@@ -33,7 +26,7 @@
 
         ul {
             display: flex;
-            gap: 12px;
+            gap: 15px;
             list-style: none;
 
             li {
@@ -54,7 +47,7 @@
                     }
 
                     &:hover {
-                        color: rgb(75, 75, 75);
+                        color: yellow;
 
                         &::after {
                             background: rgb(255, 238, 0);
@@ -170,7 +163,7 @@
         }
 
         .menu_ {
-            display: flex;
+            //menu_flex
         }
     }
 

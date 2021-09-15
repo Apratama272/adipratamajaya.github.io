@@ -1,6 +1,31 @@
 @import "_nav.scss";
+@import "_container_main.scss";
+@import "_services.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+@font-face {
+    font-family: 'Organetto-Bold';
+    src: url(../font/Organetto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Organte_ultraBold";
+    src: url(../font/Organetto-BoldUltraCnd.ttf);
+}
+
+@font-face {
+    font-family: 'Berlin';
+    src: url(../font/BRLNSR.TTF);
+}
+
 
 * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
     padding: 0;
     margin: 0;
 }
