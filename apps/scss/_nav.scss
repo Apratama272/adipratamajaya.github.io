@@ -33,13 +33,33 @@
 
         ul {
             display: flex;
-            gap: 10px;
+            gap: 12px;
             list-style: none;
 
             li {
                 a {
+                    position: relative;
                     text-decoration: none;
                     color: #FFFFFF;
+
+                    &::after {
+                        content: "";
+                        left: 0;
+                        right: 0;
+                        width: 100%;
+                        height: 5px;
+                        position: absolute;
+                        bottom: -25px;
+                        border-radius: 5px;
+                    }
+
+                    &:hover {
+                        color: rgb(75, 75, 75);
+
+                        &::after {
+                            background: rgb(255, 238, 0);
+                        }
+                    }
                 }
             }
         }
@@ -47,15 +67,69 @@
 
     // burger_enak
     .adiburger_ {
-        display: flex;
+        display: none;
         flex-direction: column;
 
         span {
-            width: 77px;
-            height: 10px;
+            width: 45px;
+            height: 5px;
             border-radius: 5px;
             background: azure;
-            margin-bottom: 9px;
+            margin-bottom: 7px;
+        }
+    }
+
+    // adi_menu
+    .menu_ {
+        font-family: Organetto-Bold;
+        border-radius: 10px;
+        display: none;
+        top: 100px;
+        position: absolute;
+        width: 90%;
+        height: 400px;
+        background-color: #D94A01;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #D94A01;
+
+        ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+
+            li {
+                padding: 10px;
+
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: #f1f1f1;
+
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        right: 0;
+                        bottom: -13px;
+                        left: 0;
+                        height: 5px;
+                        position: absolute;
+                        border-radius: 5px;
+                    }
+
+                    &:hover {
+                        color: gold;
+
+                        &::after {
+                            background: brown;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -70,17 +144,33 @@
             margin-bottom: 10px;
             justify-content: center;
         }
+
+        .navigasi {
+            padding: 10px 0;
+        }
     }
 }
 
 @media (max-width: 600px) {
 
     .nav_ {
+        align-items: center;
+        flex-direction: row;
 
-        .logo__ {}
+        .logo__ {
+            font-size: 16px;
+        }
 
         .navigasi {
             display: none;
+        }
+
+        .adiburger_ {
+            display: flex;
+        }
+
+        .menu_ {
+            display: flex;
         }
     }
 

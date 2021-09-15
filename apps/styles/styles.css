@@ -43,19 +43,37 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 12px;
   list-style: none;
 }
 
 .nav_ .navigasi ul li a {
+  position: relative;
   text-decoration: none;
   color: #FFFFFF;
 }
 
+.nav_ .navigasi ul li a::after {
+  content: "";
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -25px;
+  border-radius: 5px;
+}
+
+.nav_ .navigasi ul li a:hover {
+  color: #4b4b4b;
+}
+
+.nav_ .navigasi ul li a:hover::after {
+  background: #ffee00;
+}
+
 .nav_ .adiburger_ {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -63,11 +81,75 @@
 }
 
 .nav_ .adiburger_ span {
-  width: 77px;
-  height: 10px;
+  width: 45px;
+  height: 5px;
   border-radius: 5px;
   background: azure;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
+}
+
+.nav_ .menu_ {
+  font-family: Organetto-Bold;
+  border-radius: 10px;
+  display: none;
+  top: 100px;
+  position: absolute;
+  width: 90%;
+  height: 400px;
+  background-color: #D94A01;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #D94A01;
+}
+
+.nav_ .menu_ ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.nav_ .menu_ ul li {
+  padding: 10px;
+}
+
+.nav_ .menu_ ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+}
+
+.nav_ .menu_ ul li a::after {
+  content: "";
+  width: 100%;
+  right: 0;
+  bottom: -13px;
+  left: 0;
+  height: 5px;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.nav_ .menu_ ul li a:hover {
+  color: gold;
+}
+
+.nav_ .menu_ ul li a:hover::after {
+  background: brown;
 }
 
 @media (max-width: 768px) {
@@ -84,16 +166,48 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .nav_ .navigasi {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 600px) {
+  .nav_ {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav_ .logo__ {
+    font-size: 16px;
+  }
   .nav_ .navigasi {
     display: none;
+  }
+  .nav_ .adiburger_ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav_ .menu_ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 * {
   padding: 0;
   margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 /*# sourceMappingURL=styles.css.map */
