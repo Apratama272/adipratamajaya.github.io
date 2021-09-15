@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Organetto-Bold';
+    src: url(../font/Organetto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Berlin';
+    src: url(../font/BRLNSR.TTF);
+}
+
+.nav_ {
+    padding: 15px 0;
+    background-color: #D94A01;
+    display: flex;
+    justify-content: space-around;
+
+    // logo
+    .logo__ {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            font-family: Berlin;
+            color: #f1f1f1;
+        }
+    }
+
+    // Navigasi
+    .navigasi {
+        font-family: 'Organetto-Bold';
+        align-self: center;
+        display: flex;
+
+        ul {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    // burger_enak
+    .adiburger_ {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            width: 77px;
+            height: 10px;
+            border-radius: 5px;
+            background: azure;
+            margin-bottom: 9px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav_ {
+        flex-direction: column;
+
+        .logo__ {
+            font-size: 35px;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav_ {
+
+        .logo__ {}
+
+        .navigasi {
+            display: none;
+        }
+    }
+
+}
